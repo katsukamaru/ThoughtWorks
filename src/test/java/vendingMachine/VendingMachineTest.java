@@ -12,4 +12,11 @@ public class VendingMachineTest {
         assertEquals(ViverageType.Coke, bought.getViverageType());
     }
 
+    @Test
+    public void reduceFromStocks() {
+        Stocks stocks = new Stocks();
+        stocks.reduce(ViverageType.Coke);
+        assertEquals(4, stocks.getCokeNum());
+    }
+
 }
