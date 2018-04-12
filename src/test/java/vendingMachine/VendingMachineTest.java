@@ -8,8 +8,8 @@ public class VendingMachineTest {
     @Test
     public void vendingMachineTest(){
         VendingMachine vm = new VendingMachine();
-        Viverage bought = vm.vender(100, 1); // 1 はコカコーラ
-        assertEquals(1, bought.getViverageType());
+        Viverage bought = vm.vender(100, ViverageType.Coke);
+        assertEquals(ViverageType.Coke, bought.getViverageType());
     }
 
 }

@@ -7,7 +7,7 @@ public class VendingMachine {
     private int hundredYenNum = 10;
     private int changeNum = 0;
 
-    public Viverage vender(int insertMoney, int viverageType){
+    public Viverage vender(int insertMoney, ViverageType viverageType){
         return new Viverage(viverageType);
     }
 
